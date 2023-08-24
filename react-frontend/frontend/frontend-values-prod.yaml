@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: malleshdevops/createat-devops-task
+  repository: sravandevops95/devops-eksproject
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "react-v11"
+  tag: "react-v1"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -69,9 +69,9 @@ resources:
      memory: 128Mi
 
 autoscaling:
-  enabled: false
+  enabled: true
   minReplicas: 1
-  maxReplicas: 100
+  maxReplicas: 10
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
 

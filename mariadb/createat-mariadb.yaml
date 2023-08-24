@@ -111,7 +111,7 @@ rootUser:
   ## MariaDB admin password
   ## ref: https://github.com/bitnami/bitnami-docker-mariadb#setting-the-root-password-on-first-run
   ##
-  password: "root@123"
+  password: "devops15"
   ## Option to force users to specify a password. That is required for 'helm upgrade' to work properly.
   ## If it is not force, a random password will be generated.
   ##
@@ -126,8 +126,8 @@ db:
   ## MariaDB username and password
   ## ref: https://github.com/bitnami/bitnami-docker-mariadb#creating-a-database-user-on-first-run
   ##
-  user: "devops"
-  password: "devops@2022"
+  user: "devops15"
+  password: "devops15"
   ## Database to create
   ## ref: https://github.com/bitnami/bitnami-docker-mariadb#creating-a-database-on-first-run
   ##
@@ -154,7 +154,7 @@ replication:
   ## MariaDB replication user password
   ## ref: https://github.com/bitnami/bitnami-docker-mariadb#setting-up-a-replication-cluster
   ##
-  password: "root@123"
+  password: "devops15"
   ## Option to force users to specify a password. That is required for 'helm upgrade' to work properly.
   ## If it is not force, a random password will be generated.
   ##
@@ -232,7 +232,7 @@ master:
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
-    # storageClass: "-"
+    storageClass: "gp3"
     ## Persistent Volume Claim annotations
     ##
     annotations: {}
