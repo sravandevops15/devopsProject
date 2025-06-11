@@ -1,4 +1,4 @@
-name: npm Project
+name: npm Projec
 on: push
 jobs:
     test:
